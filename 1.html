@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <form id="form">
+        <input type="text" />
+        <input type="password">
+        <input type="button" value="提交" id="inp_btn">
+    </form>
+</body>
+<script>
+    var inp_btn = document.querySelector('#inp_btn')
+    var form = document.querySelector('#form')
+    inp_btn.onclick = function() {
+        var formData = new FormData()
+        formData.set('age', '18')
+        console.log(formData);
+    }
+</script>
+
+</html>
